@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Test]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="2" parallel="tests" name="ChromeTest(failed)" verbose="0">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://www.ndtv.com/"/>
+    <classes>
+      <class name="com.testvagrant.test.HomePageTest">
+        <methods>
+          <include name="homePage"/>
+          <include name="verifyNavigateUrl" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.testvagrant.test.HomePageTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Test] -->

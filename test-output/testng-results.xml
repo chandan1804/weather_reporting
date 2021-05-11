@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-11T23:04:06 IST" name="Test" finished-at="2021-05-11T23:06:18 IST" duration-ms="132202">
+    <groups>
+    </groups>
+    <test started-at="2021-05-11T23:04:06 IST" name="ChromeTest" finished-at="2021-05-11T23:06:18 IST" duration-ms="132202">
+      <class name="com.testvagrant.test.BeforeTests">
+        <test-method is-config="true" signature="beforeTestSuite(java.lang.String)[pri:0, instance:com.testvagrant.test.BeforeTests@6cd28fa7]" started-at="2021-05-11T23:04:06 IST" name="beforeTestSuite" finished-at="2021-05-11T23:04:27 IST" duration-ms="20785" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestSuite -->
+      </class> <!-- com.testvagrant.test.BeforeTests -->
+      <class name="com.testvagrant.test.HomePageTest">
+        <test-method is-config="true" signature="homePage()[pri:0, instance:com.testvagrant.test.HomePageTest@614ca7df]" started-at="2021-05-11T23:04:27 IST" name="homePage" finished-at="2021-05-11T23:04:27 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method signature="verifyNavigateUrl(java.lang.String)[pri:1, instance:com.testvagrant.test.HomePageTest@614ca7df]" started-at="2021-05-11T23:04:27 IST" name="verifyNavigateUrl" finished-at="2021-05-11T23:05:27 IST" duration-ms="60232" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.ndtv.com/]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: 59.685
+  (Session info: chrome=90.0.4430.93)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UMFSCEV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61140}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c6c4fd11dbddc5bd527d24633ab264d2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 59.685
+  (Session info: chrome=90.0.4430.93)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-UMFSCEV', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\Chandan\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61140}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c6c4fd11dbddc5bd527d24633ab264d2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:857)
+at com.testvagrant.page.HomePage.navigateToUrl(HomePage.java:32)
+at com.testvagrant.test.HomePageTest.verifyNavigateUrl(HomePageTest.java:27)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:41)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:443)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:67)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNavigateUrl -->
+        <test-method signature="verifySubMenuButton()[pri:2, instance:com.testvagrant.test.HomePageTest@614ca7df]" started-at="2021-05-11T23:05:27 IST" name="verifySubMenuButton" finished-at="2021-05-11T23:05:35 IST" duration-ms="7614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubMenuButton -->
+        <test-method signature="verifyWeatherSectionButton()[pri:3, instance:com.testvagrant.test.HomePageTest@614ca7df]" started-at="2021-05-11T23:05:35 IST" name="verifyWeatherSectionButton" finished-at="2021-05-11T23:05:47 IST" duration-ms="11702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWeatherSectionButton -->
+      </class> <!-- com.testvagrant.test.HomePageTest -->
+      <class name="com.testvagrant.test.WeatherPageTest">
+        <test-method is-config="true" signature="homePage()[pri:0, instance:com.testvagrant.test.WeatherPageTest@4738a206]" started-at="2021-05-11T23:05:47 IST" name="homePage" finished-at="2021-05-11T23:05:47 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method signature="verifyWeatherDetailsPopup()[pri:5, instance:com.testvagrant.test.WeatherPageTest@4738a206]" started-at="2021-05-11T23:05:47 IST" name="verifyWeatherDetailsPopup" finished-at="2021-05-11T23:06:18 IST" duration-ms="31722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWeatherDetailsPopup -->
+      </class> <!-- com.testvagrant.test.WeatherPageTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Test -->
+</testng-results>

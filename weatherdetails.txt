@@ -1,0 +1,6 @@
+Bengaluru, Karnataka
+Condition : Overcast
+Wind: 2.16 KPH Gusting to 3.66 KPH
+Humidity: 41%
+Temp in Degrees: 32
+Temp in Fahrenheit: 90

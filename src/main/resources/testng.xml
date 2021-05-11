@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="2" verbose="1" name="Test" annotations="JDK" parallel="tests">
+    <test name="ChromeTest">
+        <parameter name="browser" value="Chrome"/>
+        <parameter name="url" value="https://www.ndtv.com/"/>
+        <classes>
+            <class name="com.testvagrant.test.BeforeTests"/>
+            <class name="com.testvagrant.test.HomePageTest"/>
+            <class name="com.testvagrant.test.WeatherPageTest"/>
+        </classes>
+    </test>
+    <test name="FirefoxTest">
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="url" value="https://www.ndtv.com/"/>
+        <classes>
+            <class name="com.testvagrant.test.BeforeTests"/>
+            <class name="com.testvagrant.test.HomePageTest"/>
+            <class name="com.testvagrant.test.WeatherPageTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,6 @@
+Mysore, Karnataka
+Condition : Overcast
+Wind: 2.98 KPH Gusting to 3.21 KPH
+Humidity: 52%
+Temp in Degrees: 32
+Temp in Fahrenheit: 90

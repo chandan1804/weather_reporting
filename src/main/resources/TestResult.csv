@@ -1,0 +1,5 @@
+"City","UI Temperature","API Temperature","Temperature Range","Result"
+"Bengaluru","31","24","10","PASS"
+"Ahmedabad","39","32","10","PASS"
+"Allahabad","37","34","10","PASS"
+"Mysore","32","24","10","PASS"
