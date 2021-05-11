@@ -10,13 +10,13 @@
             <class name="com.testvagrant.test.WeatherPageTest"/>
         </classes>
     </test>
-    <test name="FirefoxTest">
-        <parameter name="browser" value="Firefox"/>
-        <parameter name="url" value="https://www.ndtv.com/"/>
-        <classes>
-            <class name="com.testvagrant.test.BeforeTests"/>
-            <class name="com.testvagrant.test.HomePageTest"/>
-            <class name="com.testvagrant.test.WeatherPageTest"/>
-        </classes>
-    </test>
+<!--    <test name="FirefoxTest">-->
+<!--        <parameter name="browser" value="Firefox"/>-->
+<!--        <parameter name="url" value="https://www.ndtv.com/"/>-->
+<!--        <classes>-->
+<!--            <class name="com.testvagrant.test.BeforeTests"/>-->
+<!--            <class name="com.testvagrant.test.HomePageTest"/>-->
+<!--            <class name="com.testvagrant.test.WeatherPageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
