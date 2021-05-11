@@ -17,19 +17,25 @@ Emailable html report can be found in "test-output/emailable-report.html"
 
 ###### **maven commands**
 #Validates whether project is correct and all necessary information is available to complete the build process.
+
 mvn validate
 
 #Initializes build state, for example set properties.
+
 mvn initialize
 
 #Generate any source code to be included in compilation phase.
+
 mvn generate-sources
 
 #Compile the source code of the project.
+
 mvn compile
 
 #Run test
+
 mvn clean test -P weatherReportTest
 
 #Copies the final package to the remote repository for sharing with other developers and projects.
+
 mvn deploy
