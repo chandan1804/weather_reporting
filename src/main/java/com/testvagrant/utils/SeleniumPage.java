@@ -24,9 +24,10 @@ public class SeleniumPage extends DriverInit {
      *
      * @param element - WebElement
      */
-    public void waitUntilElementClickable(WebElement element) {
-        wait = new WebDriverWait(driver, 20);
-        element = wait.until(ExpectedConditions.elementToBeClickable(element));
+    public void waitUntilElementClickable(WebElement element, int timeoutInSeconds) {
+        wait = new WebDriverWait(driver, timeoutInSeconds);
+        logger.info("Waiting for Element "+element+" to be Clickable");
+        wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
     /**
