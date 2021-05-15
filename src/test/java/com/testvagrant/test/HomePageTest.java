@@ -16,14 +16,14 @@ public class HomePageTest extends SeleniumTest {
     private HomePage homePage;
 
     @BeforeClass
-    public HomePage homePage() {
+    public void homePage() {
         homePage = PageFactory.initElements(driver, HomePage.class);
-        return homePage;
     }
 
     @Test(priority = 1)
     @Parameters("url")
     public void verifyNavigateUrl(String url) {
+        System.out.println(homePage);
         verifyCondition(homePage.navigateToUrl(url), "Verify that the Page Navigation is successful");
     }
 
