@@ -24,19 +24,22 @@ public class DriverInit {
 
     public static void driverConfig(String browser, String driverProperty, String driverPath) throws Exception {
         System.setProperty(driverProperty, driverPath);
-        if (browser.equals("Chrome")) {
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("start-maximized");
-            options.setAcceptInsecureCerts(true);
-            driver = new ChromeDriver(options);
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        }
-        if (browser.equals("Firefox")) {
-            driver = new FirefoxDriver();
-            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        switch(browser)
+        {
+            case "Chrome":
+                ChromeOptions options = new ChromeOptions();
+                options.addArguments("start-maximized");
+                options.setAcceptInsecureCerts(true);
+                driver = new ChromeDriver(options);
+                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                break;
+            case "Firefox":
+                driver = new FirefoxDriver();
+                driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+                break;
         }
         driver.manage().window().maximize();
-        driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
     }
 
     public void setBrowser(String browser) {
