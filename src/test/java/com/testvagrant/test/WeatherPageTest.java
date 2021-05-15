@@ -15,9 +15,8 @@ public class WeatherPageTest extends SeleniumTest {
     private WeatherPage weatherPage;
 
     @BeforeClass
-    public WeatherPage homePage() {
+    public void homePage() {
         weatherPage = PageFactory.initElements(driver, WeatherPage.class);
-        return weatherPage;
     }
 
     @Test(priority = 5)
